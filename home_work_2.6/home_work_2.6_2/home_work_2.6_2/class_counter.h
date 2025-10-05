@@ -1,5 +1,4 @@
 #ifndef home_work_2_6_2_class_counter
-#ifndef home_work_2_6_2_class_counter
 #define home_work_2_6_2_class_counter
 
 
