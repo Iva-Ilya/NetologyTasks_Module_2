@@ -18,14 +18,14 @@ public:
 	}
 	std::string get_name() { return name; }
 	int get_sides_count() { return sides_count; }
-	int get_angels_count() { return angles_count; }
+	int get_angles_count() { return angles_count; }
 
 	virtual bool check()
 	{
 		if (sides_count == 0) { std::cout << "Правильная" << std::endl; return true; }
 		else { std::cout << "Неправильная" << std::endl; return false; }
 	}
-	virtual void print_info_sides_angels()
+	virtual void print_info_sides_angles()
 	{
 		std::cout << get_name() << std::endl;
 		std::cout << "Количество сторон: " << get_sides_count() << std::endl;
@@ -52,7 +52,7 @@ public:
 		if ((sides_count == 3) && ((A+B+C) == 180)) { std::cout << "Правильная" << std::endl; return true; }
 		else { std::cout << "Неправильная" << std::endl; return false; }
 	}
-	void print_info_sides_angels() override
+	void print_info_sides_angles() override
 	{
 		std::cout << get_name() << std::endl;
 		std::cout << "Количество сторон: " << get_sides_count() << std::endl;
@@ -82,7 +82,7 @@ public:
 		if ((sides_count == 3) && (C == 90)) { std::cout << "Правильная" << std::endl; return true; }
 		else { std::cout << "Неправильная" << std::endl; return false; }
 	}
-	void print_info_sides_angels() override
+	void print_info_sides_angles() override
 	{
 		std::cout << get_name() << std::endl;
 		std::cout << "Количество сторон: " << get_sides_count() << std::endl;
@@ -111,7 +111,7 @@ public:
 		if ((a == c) && (A == C)) { std::cout << "Правильная" << std::endl; return true; }
 		else { std::cout << "Неправильная" << std::endl; return false; }
 	}
-	void print_info_sides_angels() override
+	void print_info_sides_angles() override
 	{
 		std::cout << get_name() << std::endl;
 		std::cout << "Количество сторон: " << get_sides_count() << std::endl;
@@ -140,7 +140,7 @@ public:
 		if (a == b && a == c && A == B && A == C) { std::cout << "Правильная" << std::endl; return true; }
 		else { std::cout << "Неправильная" << std::endl; return false; }
 	}
-	void print_info_sides_angels() override
+	void print_info_sides_angles() override
 	{
 		std::cout << get_name() << std::endl;
 		std::cout << "Количество сторон: " << get_sides_count() << std::endl;
@@ -170,7 +170,7 @@ public:
 		if ((sides_count == 4) && ((A + B + C + D) == 360)) { std::cout << "Правильная" << std::endl; return true; }
 		else { std::cout << "Неправильная" << std::endl; return false; }
 	}
-	void print_info_sides_angels() override
+	void print_info_sides_angles() override
 	{
 		std::cout << get_name() << std::endl;
 		std::cout << "Количество сторон: " << get_sides_count() << std::endl;
@@ -199,7 +199,7 @@ public:
 		if ((a == c && b == d) && (A == 90 && B == 90 && C == 90 && D == 90)) { std::cout << "Правильная" << std::endl; return true; }
 		else { std::cout << "Неправильная" << std::endl; return false; }
 	}
-	void print_info_sides_angels() override
+	void print_info_sides_angles() override
 	{
 		std::cout << get_name() << std::endl;
 		std::cout << "Количество сторон: " << get_sides_count() << std::endl;
@@ -228,7 +228,7 @@ public:
 		if ((a == b && c == d && a == d ) && (A == 90 && B == 90 && C == 90 && D == 90)) { std::cout << "Правильная" << std::endl; return true; }
 		else { std::cout << "Неправильная" << std::endl; return false; }
 	}
-	void print_info_sides_angels() override
+	void print_info_sides_angles() override
 	{
 		std::cout << get_name() << std::endl;
 		std::cout << "Количество сторон: " << get_sides_count() << std::endl;
@@ -257,7 +257,7 @@ public:
 		if ((a == c && b == d) && (A == C && B == D)) { std::cout << "Правильная" << std::endl; return true; }
 		else { std::cout << "Неправильная" << std::endl; return false; }
 	}
-	void print_info_sides_angels() override
+	void print_info_sides_angles() override
 	{
 		std::cout << get_name() << std::endl;
 		std::cout << "Количество сторон: " << get_sides_count() << std::endl;
@@ -286,7 +286,7 @@ public:
 		if ((a == b && c == d && a == d) && (A == C && B == D)) { std::cout << "Правильная" << std::endl; return true; }
 		else { std::cout << "Неправильная" << std::endl; return false; }
 	}
-	void print_info_sides_angels() override
+	void print_info_sides_angles() override
 	{
 		std::cout << get_name() << std::endl;
 		std::cout << "Количество сторон: " << get_sides_count() << std::endl;
@@ -307,48 +307,48 @@ int main()
 	SetConsoleOutputCP(1251);
 
 	Figure figure;
-	figure.print_info_sides_angels();
+	figure.print_info_sides_angles();
 
 	Triangle triangle_1;
 	Figure* index_triangle_1 = &triangle_1;
-	index_triangle_1->print_info_sides_angels();
+	index_triangle_1->print_info_sides_angles();
 
 	Rectangle_triangle triangle_2;
 	Figure* index_triangle_2 = &triangle_2;
-	index_triangle_2->print_info_sides_angels();
+	index_triangle_2->print_info_sides_angles();
 
 	Isosceles_triangle triangle_3;
 	Figure* index_triangle_3 = &triangle_3;
-	index_triangle_3->print_info_sides_angels();
+	index_triangle_3->print_info_sides_angles();
 	
 
 	Equilateral_triangle triangle_4;
 	Figure* index_triangle_4 = &triangle_4;
-	index_triangle_4->print_info_sides_angels();
+	index_triangle_4->print_info_sides_angles();
 	
 
 
 
 	Quadrangle quadrangle_1;
 	Figure* index_quadrangle_1 = &quadrangle_1;
-	index_quadrangle_1->print_info_sides_angels();
+	index_quadrangle_1->print_info_sides_angles();
 	
 
 	Rectangular quadrangle_2;
 	Figure* index_quadrangle_2 = &quadrangle_2;
-	index_quadrangle_2->print_info_sides_angels();
+	index_quadrangle_2->print_info_sides_angles();
 
 	Square quadrangle_3;
 	Figure* index_quadrangle_3 = &quadrangle_3;
-	index_quadrangle_3->print_info_sides_angels();
+	index_quadrangle_3->print_info_sides_angles();
 
 	Parallelogram quadrangle_4;
 	Figure* index_quadrangle_4 = &quadrangle_4;
-	index_quadrangle_4->print_info_sides_angels();
+	index_quadrangle_4->print_info_sides_angles();
 
 	Diamond quadrangle_5;
 	Figure* index_quadrangle_5 = &quadrangle_5;
-	index_quadrangle_5->print_info_sides_angels();
+	index_quadrangle_5->print_info_sides_angles();
 
 
 
