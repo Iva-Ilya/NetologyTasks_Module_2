@@ -3,7 +3,7 @@
 Rectangle_triangle::Rectangle_triangle()
 {
 	sides_count = 3;
-	angels_count = 3;
+	angles_count = 3;
 	name = "Прямоугольный треугольник";
 	a = 30, b = 40, c = 50;
 	A = 30, B = 60, C = 90;
@@ -14,7 +14,7 @@ bool Rectangle_triangle::check()
 	if ((sides_count == 3) && (C == 90)) { std::cout << "Правильная" << std::endl; return true; }
 	else { std::cout << "Неправильная" << std::endl; return false; }
 }
-void Rectangle_triangle::print_info_sides_angels()
+void Rectangle_triangle::print_info_sides_angles()
 {
 	std::cout << get_name() << std::endl;
 	check();

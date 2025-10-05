@@ -8,7 +8,7 @@ class Diamond : public Square
 public:
 	Diamond();
 	bool check() override;
-	void print_info_sides_angels() override;
+	void print_info_sides_angles() override;
 };
 
 #endif

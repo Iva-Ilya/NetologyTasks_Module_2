@@ -7,7 +7,7 @@ class Isosceles_triangle : public Triangle
 public:
 	Isosceles_triangle();
 	bool check() override;
-	void print_info_sides_angels() override;
+	void print_info_sides_angles() override;
 };
 
 

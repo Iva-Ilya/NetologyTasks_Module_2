@@ -3,7 +3,7 @@
 Square::Square()
 {
 	sides_count = 4;
-	angels_count = 4;
+	angles_count = 4;
 	name = "Квадрат";
 	a = 10, b = 10, c = 10, d = 10;
 	A = 90, B = 90, C = 90, D = 90;
@@ -13,7 +13,7 @@ bool Square::check()
 	if ((a == b && c == d && a == d ) && (A && B && C && D == 90)) { std::cout << "Правильная" << std::endl; return true; }
 	else { std::cout << "Неправильная" << std::endl; return false; }
 }
-void Square::print_info_sides_angels()
+void Square::print_info_sides_angles()
 {
 	std::cout << get_name() << std::endl;
 	check();

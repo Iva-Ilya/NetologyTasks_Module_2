@@ -4,7 +4,7 @@
 Quadrangle::Quadrangle()
 	{
 		sides_count = 4;
-		angels_count = 4;
+		angles_count = 4;
 		name = "Четырехугольник:";
 		a = 10, b = 20, c = 30, d = 40;
 		A = 50, B = 130, C = 70, D = 110;
@@ -14,7 +14,7 @@ Quadrangle::Quadrangle()
 		if ((sides_count == 4) && (A + B + C + D == 360)) { std::cout << "Правильная" << std::endl; return true; }
 		else { std::cout << "Неправильная" << std::endl; return false; }
 	}
-	void Quadrangle::print_info_sides_angels()
+	void Quadrangle::print_info_sides_angles()
 	{
 		std::cout << get_name() << std::endl;
 		check();

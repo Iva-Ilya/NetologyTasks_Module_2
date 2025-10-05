@@ -8,7 +8,7 @@ class Rectangular : public Quadrangle
 public:
 	Rectangular();
 	bool check() override;
-	void print_info_sides_angels() override;
+	void print_info_sides_angles() override;
 };
 
 #endif
