@@ -41,5 +41,8 @@ int main()
 		else if (any_operation == 'х') { break; }
 	}
 	std::cout << "До свидания!" << std::endl;
+
+	delete _count;
+
 }
 
