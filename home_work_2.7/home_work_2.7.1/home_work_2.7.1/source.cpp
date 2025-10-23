@@ -1,9 +1,7 @@
 #include <iostream>
 #include <Windows.h>
 
-#define MODE 3
-
-void add(int num1, int num2);
+#define MODE 1
 
 
 int main()
@@ -25,7 +23,11 @@ int main()
 	std::cin >> num1;
 	std::cout << "Введите число 2: ";
 	std::cin >> num2;
-	add(num1, num2);
+
+	void add();
+	{
+		std::cout << "Результат сложения: " << num1 + num2 << std::endl;
+	}
 #else
 	std::cout << "Неизвестный режим. Завершение работы." << std::endl;
 #endif
@@ -35,7 +37,3 @@ int main()
 
 
 
-void add(int num1, int num2)
-{
-	std::cout << "Результат сложения: " << num1 + num2 << std::endl;
-}
