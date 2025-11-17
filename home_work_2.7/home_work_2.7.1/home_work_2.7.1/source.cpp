@@ -3,6 +3,10 @@
 
 #define MODE 1
 
+int add(int num1, int num2)
+{
+	return num1 + num2;
+}
 
 int main()
 {
@@ -24,10 +28,7 @@ int main()
 	std::cout << "Введите число 2: ";
 	std::cin >> num2;
 
-	void add();
-	{
-		std::cout << "Результат сложения: " << num1 + num2 << std::endl;
-	}
+	std::cout << "Результат сложения: " << add(num1,num2) << std::endl;
 #else
 	std::cout << "Неизвестный режим. Завершение работы." << std::endl;
 #endif
