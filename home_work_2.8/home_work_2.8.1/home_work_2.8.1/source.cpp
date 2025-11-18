@@ -32,9 +32,9 @@ int main()
 			std::cout << "Длина слова " << "'" << str << "'" << " равна " << function(str, forbidden_length) << std::endl;
 		}
 	}
-	catch (std::runtime_error& err)
+	catch (std::runtime_error& err)									//(std::string& bad_length)							
 	{
-		std::cout << err.what() <<" До свидания! " << std::endl;
+		std::cout << err.what() <<" До свидания! " << std::endl;	// "Вы ввели слово запретной длины. До свидания!"
 	}
 	catch (...)
 	{
