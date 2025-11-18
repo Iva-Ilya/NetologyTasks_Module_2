@@ -5,7 +5,8 @@ int function(std::string str, int forbidden_length)
 {
 	if (forbidden_length == str.size())
 	{
-		throw std::string {"bad_length"};
+		throw  std::runtime_error{"Вы ввели слово запретной длины."};
+		//throw std::string {"bad_length"};
 	}
 	return str.size();
 }
@@ -31,9 +32,9 @@ int main()
 			std::cout << "Длина слова " << "'" << str << "'" << " равна " << function(str, forbidden_length) << std::endl;
 		}
 	}
-	catch (std::string& bad_length)
+	catch (std::runtime_error& err)
 	{
-		std::cout << "Вы ввели слово запретной длины. До свидания!" << std::endl;
+		std::cout << err.what() <<" До свидания! " << std::endl;
 	}
 	catch (...)
 	{
